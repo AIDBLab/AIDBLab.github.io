@@ -157,10 +157,51 @@ header {
     margin-bottom: 0.5rem;
 }
 
+/* 子Tab 导航栏（层级切换） */
+.member-subtab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #e8f4fd;
+}
+
+.member-subtab-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #f8fafc;
+    border: 1px solid #e8f4fd;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #495057;
+    transition: all 0.3s;
+}
+
+.member-subtab-btn:hover {
+    background-color: #e8f4fd;
+    color: #1a5276;
+}
+
+.member-subtab-btn.active {
+    background-color: #1a5276;
+    color: white;
+    border-color: #1a5276;
+}
+
+/* 子Tab 内容区（不同层级成员） */
+.member-subtab-content {
+    display: none;
+}
+
+.member-subtab-content.active {
+    display: block;
+}
+
 /* 团队成员样式（带照片） */
 .members {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
     gap: 1.8rem;
     margin-top: 1rem;
 }
@@ -217,7 +258,7 @@ header {
 
 .student-members {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
     margin-top: 1rem;
 }
 
@@ -394,6 +435,14 @@ footer {
     .member-photo {
         width: 100px;
         height: 100px;
+    }
+    .member-subtab-nav {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        flex-wrap: nowrap;
+    }
+    .member-subtab-btn {
+        flex-shrink: 0;
     }
     /* 移动端成果项优化 */
     .achievement-item {
