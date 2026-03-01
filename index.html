@@ -26,7 +26,7 @@
         <div class="tab-nav">
             <button class="tab-btn active" data-tab="overview">关于我们</button>
             <button class="tab-btn" data-tab="members">团队成员</button>
-            <button class="tab-btn" data-tab="achievements">研究成果</button>
+            <button class="tab-btn" data-tab="achievements">研究项目</button>
             <button class="tab-btn" data-tab="papers">学术论文</button>
         </div>
 
@@ -358,21 +358,64 @@
             </div>
         </div>
 
-        <!-- Tab 内容：研究成果 -->
+        <!-- Tab 内容：研究项目 -->
         <div class="tab-content" id="achievements">
             <div class="achievements">
                 <div class="achievement-item">
                     <div class="achievement-img-wrapper">
-                        <img src="images/projects/hotload.png" 
-                            alt="内存数据库热加载技术" 
+                        <img src="images/projects/kgraph.png" 
+                            alt="数据湖加速存储下的医疗知识图谱构建及药物推荐方法研究" 
                             class="achievement-img">
                     </div>
                     <div class="achievement-text">
-                        <div class="achievement-title">内存数据库热加载技术</div>
+                        <div class="achievement-title">数据湖加速存储下的医疗知识图谱构建及药物推荐方法研究</div>
                         <div class="achievement-desc">
-                            执行期2024-2025年。内存数据库因其高效的数据处理能力而备受关注。
-                            然而传统的内存数据库在启动时通常需要一次性加载全部数据，导致启动速度缓慢，成为制约其应用连续性的关键因素。
-                            因此，研究内存数据库的热加载技术，实现数据库在启动时无需加载全部数据即可提供高效服务，对于提升内存数据库的性能和用户体验具有重要意义。
+                            执行期2026-2027年。医疗数据的海量动态性、多源异构性、关联复杂性等突出特征，均给医疗数据湖的有效数据管理和挖掘带来了挑战。
+                            因此，研究医疗数据湖中数据加速存储和数据集探索方法、医疗数据湖驱动下的知识图谱构建方法和基于医疗知识图谱的药物推荐，
+                            为医疗数据从存储、开发、关联到应用的体系提供行之有效的理论与方法支撑，对推动医疗数据智能化发展具有重要的实践意义。
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-img-wrapper">
+                        <img src="images/projects/mbuffer.png" 
+                            alt="内存数据库多级缓存技术" 
+                            class="achievement-img">
+                    </div>
+                    <div class="achievement-text">
+                        <div class="achievement-title">内存数据库多级缓存技术</div>
+                        <div class="achievement-desc">
+                            执行期2026-2027年。本课题基于SunDB内存数据库系统，研究CXL-PMEM的多级缓存（Multi-Tier Buffering）技术，保障系统性能的同时提升数据库启动和恢复的效率。
+                            本项目将系统化构建新型多级缓存架构下的数据分层迁移策略，设计CXL-PMEM缓冲区管理及快速启动恢复的工作流程，并在原型系统中实现这些核心机制。
+                            通过结合典型负载测试，充分验证系统的功能、性能和稳定性，达到核心指标要求。
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-img-wrapper">
+                        <img src="images/projects/dam.png" 
+                            alt="数据资产管理" 
+                            class="achievement-img">
+                    </div>
+                    <div class="achievement-text">
+                        <div class="achievement-title">数据资产管理</div>
+                        <div class="achievement-desc">
+                            执行期2026-2027年。数据资产是合法拥有或者控制的，能进行计量的，为组织带来经济和社会价值的数据资源。组织需要对过去的交易或事项形成的数据资源进行梳理，识别出可能作为资产的数据资源。
+                            然后进行数据资产评估，需结合数据资产类型、评估目的、市场环境综合选择评估方法，并进行多方法交叉验证。通过组织开展可信数据空间核心技术攻关，探索大模型与可信数据空间融合创新。
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-img-wrapper">
+                        <img src="images/projects/cstore.png" 
+                            alt="主行存内存型列存储技术" 
+                            class="achievement-img">
+                    </div>
+                    <div class="achievement-text">
+                        <div class="achievement-title">主行存内存型列存储技术</div>
+                        <div class="achievement-desc">
+                            执行期2025-2026年。单一的存储架构难以同时满足事务处理（OLTP）和分析处理（OLAP）的需求。行列混合（HTAP）数据库架构结合了行存储和列存储的优势，既能在事务性操作中保持高效，又能在分析型查询中提供卓越的性能。
+                            SunDB是主行存的内存数据库，其结合内存型列存储技术实现HTAP处理，因此OLTP和OLAP的处理性能都很高，而且OLAP能快速从增量行存储中访问最新数据。
                         </div>
                     </div>
                 </div>
@@ -393,39 +436,31 @@
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-img-wrapper">
-                        <img src="images/projects/cstore.png" 
-                            alt="主行存内存型列存储技术" 
+                        <img src="images/projects/hotload.png" 
+                            alt="内存数据库热加载技术" 
                             class="achievement-img">
                     </div>
                     <div class="achievement-text">
-                        <div class="achievement-title">主行存内存型列存储技术</div>
+                        <div class="achievement-title">内存数据库热加载技术</div>
                         <div class="achievement-desc">
-                            执行期2025-2026年。单一的存储架构难以同时满足事务处理（OLTP）和分析处理（OLAP）的需求。行列混合（HTAP）数据库架构结合了行存储和列存储的优势，既能在事务性操作中保持高效，又能在分析型查询中提供卓越的性能。
-                            SunDB是主行存的内存数据库，其结合内存型列存储技术实现HTAP处理，因此OLTP和OLAP的处理性能都很高，而且OLAP能快速从增量行存储中访问最新数据。
+                            执行期2024-2025年。内存数据库因其高效的数据处理能力而备受关注。
+                            然而传统的内存数据库在启动时通常需要一次性加载全部数据，导致启动速度缓慢，成为制约其应用连续性的关键因素。
+                            因此，研究内存数据库的热加载技术，实现数据库在启动时无需加载全部数据即可提供高效服务，对于提升内存数据库的性能和用户体验具有重要意义。
                         </div>
                     </div>
                 </div>
-                <div class="achievement-item">
-                    <div class="achievement-img-wrapper">
-                        <img src="images/projects/dam.png" 
-                            alt="数据资产管理" 
-                            class="achievement-img">
-                    </div>
-                    <div class="achievement-text">
-                        <div class="achievement-title">数据资产管理</div>
-                        <div class="achievement-desc">
-                            执行期2026-2027年。数据资产是合法拥有或者控制的，能进行计量的，为组织带来经济和社会价值的数据资源。组织需要对过去的交易或事项形成的数据资源进行梳理，识别出可能作为资产的数据资源。
-                            然后进行数据资产评估，需结合数据资产类型、评估目的、市场环境综合选择评估方法，并进行多方法交叉验证。通过组织开展可信数据空间核心技术攻关，探索大模型与可信数据空间融合创新。
-
-                        </div>
-                    </div>
-                </div>                
             </div>
         </div>
 
         <!-- Tab 内容：学术论文（按年划分） -->
         <div class="tab-content" id="papers">
             <div class="papers">
+                <h3 class="year-title">2026年</h3>
+                <div class="paper-item">
+                    <div class="paper-title">Hierarchy-aware graph neural network and inverse-variance reinforcement learning for drug recommendation</div>
+                    <div class="paper-authors">Wei Hou, Xianxing Liu, Linxiao Li, Chunling Fu</div>
+                    <div class="paper-journal">Neurocomputing, 2026(676):132989. doi: 10.1016/j.neucom.2026.132989</div>
+                </div>
                 <h3 class="year-title">2025年</h3>
                 <div class="paper-item">
                     <div class="paper-title">基于非易失性内存的数据库关键技术研究综述</div>

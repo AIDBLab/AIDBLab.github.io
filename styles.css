@@ -283,7 +283,7 @@ header {
 
 .achievement-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1.5rem; /* 减小间距，避免挤压 */
     padding: 1.5rem;
     border-radius: 8px;
