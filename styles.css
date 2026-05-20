@@ -60,15 +60,15 @@ header {
 .workshop-header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     max-width: 900px;
-    margin: -20px auto;
+    margin: -10px auto;
+    padding: 0 15px;
 }
 /* 左侧图标 */
 .workshop-logo img {
     width: 180px;
     height: auto;
-    border-radius: 8px;
 }
 /* 右侧标题与链接 */
 .workshop-info {
@@ -84,6 +84,7 @@ header {
     font-size: 16px;
     color: #444;
     margin: 0 0 10px 0;
+    word-wrap: break-word;
 }
 /* 一行多链接 */
 .links-row a {
@@ -495,6 +496,16 @@ footer {
     .achievement-img-wrapper {
         flex: 1 1 100%;
         aspect-ratio: 1.8 / 1; /* 移动端调整宽高比，更适配手机 */
+    }
+    /* 手机端：变成上下布局 */
+    .workshop-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .workshop-logo img {
+        width: 180px;
+        height: auto;
     }
 }
 
