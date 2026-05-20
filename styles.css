@@ -56,6 +56,48 @@ header {
     margin: 0 auto;
 }
 
+/* 图片 + 链接 整体容器 */
+.workshop-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 900px;
+    margin: -20px auto;
+}
+/* 左侧图标 */
+.workshop-logo img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+}
+/* 右侧标题与链接 */
+.workshop-info {
+    flex: 1;
+}
+.workshop-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #222;
+}
+.workshop-subtitle {
+    font-size: 16px;
+    color: #444;
+    margin: 0 0 10px 0;
+}
+/* 一行多链接 */
+.links-row a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.links-row a:hover {
+    text-decoration: underline;
+}
+.links-row span {
+    margin: 0 8px;
+    color: #999;
+}
+
 /* Tab 容器 */
 .tab-container {
     max-width: 1100px;
